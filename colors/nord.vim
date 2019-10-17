@@ -275,7 +275,7 @@ call s:hi("Boolean", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Character", s:nord14_gui, "", s:nord14_term, "", "", "")
 call s:hi("Comment", s:nord3_gui_bright, "", s:nord3_term, "", s:italicize_comments, "")
 call s:hi("Conditional", s:nord9_gui, "", s:nord9_term, "", "", "")
-call s:hi("Constant", s:nord4_gui, "", "NONE", "", "", "")
+call s:hi("Constant", s:nord9_gui, "", "NONE", "", "", "")
 call s:hi("Define", s:nord9_gui, "", s:nord9_term, "", "", "")
 call s:hi("Delimiter", s:nord6_gui, "", s:nord6_term, "", "", "")
 call s:hi("Exception", s:nord9_gui, "", s:nord9_term, "", "", "")
@@ -559,6 +559,13 @@ call s:hi("ALEErrorSign" , s:nord11_gui, "", s:nord11_term, "", "", "")
 call s:hi("ALEWarning" , s:nord13_gui, "", s:nord13_term, "", "undercurl", "")
 call s:hi("ALEError" , s:nord11_gui, "", s:nord11_term, "", "undercurl", "")
 
+" Coc
+" > neoclide/coc
+call s:hi("CocWarningSign", s:nord13_gui, "", s:nord13_term, "", "", "")
+call s:hi("CocErrorSign" , s:nord11_gui, "", s:nord11_term, "", "", "")
+call s:hi("CocInfoSign" , s:nord8_gui, "", s:nord8_term, "", "", "")
+call s:hi("CocHintSign" , s:nord10_gui, "", s:nord10_term, "", "", "")
+
 " GitGutter
 " > airblade/vim-gitgutter
 call s:hi("GitGutterAdd", s:nord14_gui, "", s:nord14_term, "", "", "")
@@ -601,6 +608,17 @@ call s:hi("plugDeleted", s:nord11_gui, "", "", s:nord11_term, "", "")
 " vim-signature
 " > kshenoy/vim-signature
 call s:hi("SignatureMarkText", s:nord8_gui, "", s:nord8_term, "", "", "")
+
+" vim-startify
+" > mhinz/vim-startify
+call s:hi("StartifyFile", s:nord6_gui, "", s:nord6_term, "", "", "")
+call s:hi("StartifyFooter", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("StartifyHeader", s:nord8_gui, "", s:nord8_term, "", "", "")
+call s:hi("StartifyNumber", s:nord7_gui, "", s:nord7_term, "", "", "")
+call s:hi("StartifyPath", s:nord8_gui, "", s:nord8_term, "", "", "")
+hi! link StartifyBracket Delimiter
+hi! link StartifySlash Normal
+hi! link StartifySpecial Comment
 
 "+--- Languages ---+
 " Haskell
